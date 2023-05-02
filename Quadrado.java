@@ -4,10 +4,13 @@ public class Quadrado {
 
 
     public Quadrado(Cor cor, String tamanho) {
-        this.cor = cor;
-        this.tamanho = tamanho;
+        setCor(cor);
+        setTamanho(tamanho);
     }
 
+    private void setCor(Cor cor) {
+        this.cor = cor;
+    }
 
     public Cor getColor() {
         return cor;
@@ -35,5 +38,4 @@ public class Quadrado {
         Quadrado quadrado = new Quadrado(Cor.AMARELO, "Grande");
         System.out.println(quadrado.toString());
     }
-
 }
